@@ -29,6 +29,7 @@ changedArray = JSON.parse(changedArray);
 changedArray.map((item) => {
   item["job"] = item["occupation"];
   delete item["occupation"];
+  item.age = (parseInt(item.age) + 1).toString();
 });
 
 // Use reduce method to calculate sum of ages and average.
